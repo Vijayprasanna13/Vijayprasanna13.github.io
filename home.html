@@ -1,0 +1,167 @@
+<html>
+	<head>
+		<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />	
+		<meta charset="UTF-8">
+		<meta name="description" content="vijayprasanna github">
+		<meta name="keywords" content="vijayprasanna,vijay prasanna,vijayprasanna13">
+		<meta name="author" content="vijay prasanna">
+		<title>
+			Vijay Prasanna
+		</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+
+	<style>
+		body{
+		margin : 0px;
+		padding :0px;
+		}
+		#encloser{
+		background-image : url(body.jpg);
+				
+		}
+		
+		#name_tag{
+		background-image:url(header.jpg);
+		background-repeat : no-repeat;
+		background-size : 100%;
+		height : 30%;
+		font-family : Lato;
+		color : White;
+		font-size : 200%;
+		text-align : center;
+		padding : 3%;
+		border-bottom-right-radius:20em;
+		border-bottom-left-radius:20em;
+		}
+		#interests{
+		text-align : center;
+		height : 60%;
+		font-family : Lato;
+		color : White;
+		font-size : 120%;
+		background-image : url(interests.jpg);
+		background-repeat : no-repeat;
+		background-size : 100%;
+		border-radius : 20em;
+		}
+		#code{
+		color : lightgreen;
+		}
+		#movies{
+		color : LightBlue;
+		}
+		#fiction{
+		color : yellow;
+		}
+		#dp{
+		border-radius : 20em;
+		border : 8px solid #303030 ;
+		}
+		#quote{
+		background-color : #303030 ;
+		margin-left : 37%;
+		width : 25%;
+		padding : 0.5%;
+		border-radius : 10em;
+		box-shadow : 10px 10px 	#1E90FF;
+		font-family : Lato;
+		}
+				
+		#skills{
+		text-align : center;
+		height : 20%;
+		font-family : Lato;
+		color : White;
+		font-size : 120%;
+		background-color : #303030;
+		border-radius : 10em;
+		box-shadow : -10px -10px #1E90FF;
+		}
+		#toggle-skill{
+		color : Tomato;
+		font-size : 120%;
+		}
+		#contact{
+		text-align : center;
+		height : 25%;
+		font-family : Lato;
+		color : White;
+		font-size : 120%;
+		background-image : url(contact.jpg);
+		background-repeat : no-repeat;
+		background-size : 100%;
+		border-radius : 1em;
+		box-shadow : 10px 5px #1E90FF;
+		}
+		#logo{
+		border-radius : 20em;
+		padding : 10px;
+		}
+	</style>
+	
+	<script>
+	var skillset = ['PHP','CSS','HTML','Javascript','SQL','C/C++'];
+	var trace = 0,count = 0;
+	setInterval(function () {
+		if (trace != 6){
+	
+		if(skillset[trace][count]){
+				document.getElementById("toggle-skill").innerHTML += skillset[trace][count];
+				count ++;
+				}
+		else {
+		
+		document.getElementById("toggle-skill").innerHTML = "";
+		count = 0;
+		trace++;
+		}
+		
+		}
+				
+			else{
+				document.getElementById("toggle-skill").innerHTML = "";
+				trace = 0;
+				count = 0;
+				}		
+			
+	}, 300);
+	</script>
+	
+	</head>
+	
+	<body>
+	<div id = "encloser">
+	
+		<div id = "name_tag">
+			Hello there! :)<br/>
+			I am Vijay Prasanna.<br/><br/>
+			<img src = "gvp.jpg" id = "dp" />
+			<br/>
+		</div>
+		<br/><br/><br/><br/>
+		
+		<div id = "interests"><br/><br/><br/>
+			I am an Electrical and Electronics Engineer studying at NIT-Trichy.<br/><br/>
+			I love to <span id = "code">&ltCODE&gt</span> , read <span id = "fiction">Fiction</span> and Watch <span id = "movies">Movies</span>.<br/><br/><br/><br/>
+			<b><br/><div id = "quote">IMAGINE AND CREATE,<br/>EXPLORE AND INNOVATE.</div><br/></b>
+		<br/><br/>
+		</div>
+		<br/><br/><br/>
+		<div id = "skills">
+		<br/>
+		Want to know what I know?
+		<br/><br/><span id = "toggle-skill"></span>
+		</div>
+		
+		<br/><br/>
+		<div id = "contact"><br/><br/>
+		Know me Better on <span id ="movies"><b>Facebook</b></span>, Follow me on <span id = "movies"><b>Twitter</b></span> and take a look at my projects on <span id = "movies"><b>Github</b></span>.<br/><br/>
+		<a href = "https://www.facebook.com/profile.php?id=100005692519321&fref=ts" target = "blank"><img  id = "logo" src = "facebook.png" width = "50" height = "50"><a/> 
+		<a href = "https://twitter.com/vijayprasanna13" target = "blank"><img  id = "logo" src = "twitter.png" width = "50" height = "50"></a>
+		<a href = "https://github.com/vijayprasanna13" target = "blank"><img  id = "logo" src = "github.png" width = "50" height = "50"></a>
+		</div>
+	</div>
+	</body>
+</html>	
