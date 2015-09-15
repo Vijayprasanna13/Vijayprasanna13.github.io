@@ -97,35 +97,42 @@
 		border-radius : 20em;
 		padding : 10px;
 		}
+		.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 	</style>
 	
-	<script>
-	var skillset = ['PHP','CSS','HTML','Javascript','SQL','C/C++','Jquery','Bootstrap','Python'];
-	var trace = 0,count = 0;
-	setInterval(function () {
-		if (trace != 9){
 	
-		if(skillset[trace][count]){
-				document.getElementById("toggle-skill").innerHTML += skillset[trace][count];
-				count ++;
-				}
-		else {
-		
-		document.getElementById("toggle-skill").innerHTML = "";
-		count = 0;
-		trace++;
-		}
-		
-		}
-				
-			else{
-				document.getElementById("toggle-skill").innerHTML = "";
-				trace = 0;
-				count = 0;
-				}		
-			
-	}, 280);
+	<script src="jquery.js"></script>
+	<script src="typed.js-master/js/typed.js"></script>
+	<script>
+    	$(function(){
+        	$("#toggle-skill").typed({
+            	strings: ["C\\C++^500", "HTML^500","CSS^500","Javascript^500","PHP^500","MySQL^500","Python^500"],
+            	typeSpeed: -1,
+        		loop: true
+        	});
+    	});
 	</script>
+	
 	
 	</head>
 	
