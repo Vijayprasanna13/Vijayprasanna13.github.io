@@ -1,0 +1,16 @@
+#side-bar-1{
+	background-color : peru;
+	height : 100%;
+	text-align: center;
+		
+}
+#coffee-circle{
+	margin-top: 5%;
+	width: 240px;
+	height: 240px;
+}
+#descp-coffee{
+	margin-top: 2%;
+	font-family: Shadows Into Light;
+	font-size: 200%;  
+}

@@ -1,171 +1,29 @@
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<meta name=viewport content='width=700;height=800'>
-		
-		<title>
-			Vijay Prasanna
-		</title>
-	
-	<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel = "stylesheet" href = "index_css.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
-	<style>
-		body{
-		margin : 0px;
-		padding :0px;
-		}
-		#encloser{
-		background-image : url(body.jpg);
-				
-		}
-		
-		#name_tag{
-		background-image:url(header.jpg);
-		background-repeat : no-repeat;
-		background-size : 100%;
-		height : 30%;
-		font-family : Lato;
-		color : White;
-		font-size : 200%;
-		text-align : center;
-		padding : 3%;
-		border-bottom-right-radius:20em;
-		border-bottom-left-radius:20em;
-		}
-		#interests{
-		text-align : center;
-		height : 60%;
-		font-family : Lato;
-		color : White;
-		font-size : 120%;
-		background-image : url(interests.jpg);
-		background-repeat : no-repeat;
-		background-size : 100%;
-		border-radius : 20em;
-		}
-		#code{
-		color : lightgreen;
-		}
-		#movies{
-		color : LightBlue;
-		}
-		#fiction{
-		color : yellow;
-		}
-		#dp{
-		border-radius : 20em;
-		border : 8px solid #303030 ;
-		}
-		#quote{
-		background-color : #303030 ;
-		margin-left : 37%;
-		width : 25%;
-		padding : 0.5%;
-		border-radius : 10em;
-		box-shadow : 10px 10px 	#1E90FF;
-		font-family : Lato;
-		}
-				
-		#skills{
-		text-align : center;
-		height : 20%;
-		font-family : Lato;
-		color : White;
-		font-size : 120%;
-		background-color : #303030;
-		border-radius : 10em;
-		box-shadow : -10px -10px #1E90FF;
-		}
-		#toggle-skill{
-		color : Tomato;
-		font-size : 120%;
-		}
-		#contact{
-		text-align : center;
-		height : 25%;
-		font-family : Lato;
-		color : White;
-		font-size : 120%;
-		background-image : url(contact.jpg);
-		background-repeat : no-repeat;
-		background-size : 100%;
-		border-radius : 1em;
-		box-shadow : 10px 5px #1E90FF;
-		}
-		#logo{
-		border-radius : 20em;
-		padding : 10px;
-		}
-		.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-	</style>
-	
-	
-	<script src="jquery.js"></script>
-	<script src="typed.js-master/js/typed.js"></script>
-	<script>
-    	$(function(){
-        	$("#toggle-skill").typed({
-            	strings: ["C\\C++^500", "HTML^500","CSS^500","Javascript^500","PHP^500","MySQL^500","Python^500"],
-            	typeSpeed: -1,
-        		loop: true
-        	});
-    	});
-	</script>
-	
-	
-	</head>
-	
+	</head> 
+
 	<body>
-	<div id = "encloser">
-	
-		<div id = "name_tag">
-			Hello there! :)<br/>
-			I am Vijay Prasanna.<br/><br/>
-			<img src = "gvp.jpg" id = "dp" />
-			<br/>
+		<div class = "container-fluid">
+			<div class = "row">
+				<div class = "col-md-12" id = "side-bar-1">
+					<div id = "coffee-img">
+						<img src = "monday5.png" id = "coffee-circle" class = "img-circle"/>
+						<div class = "row" id = "descp-coffee">
+							Hold on...<br/>
+							I'm working on it.<br/>
+							Why don't you grab a cup of coffee while I'm at it.
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<br/><br/><br/><br/>
-		
-		<div id = "interests"><br/><br/><br/><br/><br/>
-			<span style = "word-wrap:break-word">I am an Electrical and Electronics Engineer studying at NIT-Trichy.</span><br/><br/>
-			I love to <span id = "code">&ltCODE&gt</span> , read <span id = "fiction">Fiction</span> and Watch <span id = "movies">Movies</span>.<br/><br/><br/><br/>
-			
-		</div>
-		<br/><br/><br/>
-		<div id = "skills">
-		<br/>
-		Want to know what I know?
-		<br/><br/><span id = "toggle-skill"></span>
-		</div>
-		
-		<br/><br/>
-		<div id = "contact"><br/><br/>
-		Know me Better on <span id ="movies"><b>Facebook</b></span>, Follow me on <span id = "movies"><b>Twitter</b></span> and take a look at my projects on <span id = "movies"><b>Github</b></span>.<br/><br/>
-		<a href = "https://www.facebook.com/profile.php?id=100005692519321&fref=ts" target = "blank"><img  id = "logo" src = "facebook.png" width = "50" height = "50"><a/> 
-		<a href = "https://twitter.com/vijayprasanna13" target = "blank"><img  id = "logo" src = "twitter.png" width = "50" height = "50"></a>
-		<a href = "https://github.com/vijayprasanna13" target = "blank"><img  id = "logo" src = "github.png" width = "50" height = "50"></a>
-		</div>
-	</div>
 	</body>
-</html>	
+
+</html>
