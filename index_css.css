@@ -9,10 +9,11 @@
 	width: 240px;
 	height: 240px;
 	border: 8px solid white;
-	transition: border 5s ease;
+	transition: border 5s ease, transform 2s;
 }
 #coffee-circle:hover{
 	border: 8px solid Saddlebrown;
+	transform: rotate(360deg);
 }
 #descp-coffee{
 	margin-top: 2%;
