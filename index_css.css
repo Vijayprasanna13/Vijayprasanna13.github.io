@@ -9,7 +9,7 @@
 	width: 240px;
 	height: 240px;
 	border: 8px solid white;
-	transition: border 5s ease, transform 2s;
+	transition: border 3s ease, transform 3s;
 }
 #coffee-circle:hover{
 	border: 8px solid Saddlebrown;
