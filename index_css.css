@@ -1,16 +1,19 @@
 #side-bar-1{
-	animation: pulse 3s infinite;
+	animation: pulse 5s infinite;
 	animation-direction: alternate;
 	background-color : peru;
 	height : 100%;
 	text-align: center;	
+	
 }
 @keyframes pulse{
 	0%{
 		background-color: peru;
+		
 	}
 	100%{
 		background-color: chocolate;
+		
 	}
 }
 #coffee-circle{
@@ -19,6 +22,22 @@
 	height: 240px;
 	border: 8px solid white;
 	transition: border 3s ease, transform 3s;
+	box-shadow: 0px -20px 10px #000000;
+	animation: shadows 5s infinite alternate;
+}
+@keyframes shadows{
+	0%{
+		box-shadow: 0px -5px 50px #000000;
+	}
+	25%{
+		box-shadow: 5px 0px 50px #000000;
+	}
+	50%{
+		box-shadow: 0px 5px 50px #000000;
+	}
+	100%{
+		box-shadow: -5px 0px 50px #000000;
+	}
 }
 #coffee-circle:hover{
 	cursor: pointer;
