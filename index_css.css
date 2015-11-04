@@ -1,8 +1,17 @@
 #side-bar-1{
+	animation: pulse 3s infinite;
+	animation-direction: alternate;
 	background-color : peru;
 	height : 100%;
-	text-align: center;
-		
+	text-align: center;	
+}
+@keyframes pulse{
+	0%{
+		background-color: peru;
+	}
+	100%{
+		background-color: chocolate;
+	}
 }
 #coffee-circle{
 	margin-top: 5%;
@@ -12,6 +21,7 @@
 	transition: border 3s ease, transform 3s;
 }
 #coffee-circle:hover{
+	cursor: pointer;
 	border: 8px solid Saddlebrown;
 	transform: rotate(360deg);
 }
