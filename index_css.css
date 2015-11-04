@@ -23,20 +23,20 @@
 	border: 8px solid white;
 	transition: border 3s ease, transform 3s;
 	box-shadow: 0px -20px 10px #000000;
-	animation: shadows 5s infinite alternate;
+	animation: shadows 5s infinite alternate-reverse ease;
 }
 @keyframes shadows{
 	0%{
-		box-shadow: 0px -5px 50px #000000;
+		box-shadow: 0px -5px 0px #000000;
 	}
 	25%{
-		box-shadow: 5px 0px 50px #000000;
+		box-shadow: 5px 0px 0px #000000;
 	}
 	50%{
-		box-shadow: 0px 5px 50px #000000;
+		box-shadow: 0px 5px 0px #000000;
 	}
 	100%{
-		box-shadow: -5px 0px 50px #000000;
+		box-shadow: -5px 0px 0px #000000;
 	}
 }
 #coffee-circle:hover{
