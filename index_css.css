@@ -51,6 +51,11 @@
 }
 #lift{
 	transition: all 7s ease;
+	-moz-user-select: none;
+	-webkit-user-select: none; 
+	-ms-user-select:none; 
+	user-select:none;
+	-o-user-select:none; 
 }
 #lift:hover{
 	cursor: default;
