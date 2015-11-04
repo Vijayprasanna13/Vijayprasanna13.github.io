@@ -53,5 +53,6 @@
 	transition: all 7s ease;
 }
 #lift:hover{
+	cursor: default;
 	font-size: 450%;
 }
