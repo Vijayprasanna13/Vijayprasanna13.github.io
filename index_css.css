@@ -61,3 +61,15 @@
 	cursor: default;
 	font-size: 450%;
 }
+#contact{
+	font-family: Amatic SC;
+	font-weight: 500;
+	font-size: 200%;
+}
+#contact-link{
+	color: black;
+}
+#contact-link:link    {color:none; background-color:none; text-decoration:none}
+#contact-link:visited {color:none; background-color:none; text-decoration:none}
+#contact-link:hover   {color:none; background-color:none; opactiy:0.5;text-decoration:none}
+#contact-link:active  {color:none; background-color:none; text-decoration:none}
