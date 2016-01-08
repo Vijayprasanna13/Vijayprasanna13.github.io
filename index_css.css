@@ -1,3 +1,7 @@
+
+body{
+	background-color: peru;
+}
 #side-bar-1{
 	animation: pulse 5s infinite;
 	animation-direction: alternate;
@@ -50,7 +54,7 @@
 	font-size: 200%;  
 }
 #lift{
-	transition: all 7s ease;
+	transition: all .5s ease;
 	-moz-user-select: none;
 	-webkit-user-select: none; 
 	-ms-user-select:none; 
@@ -59,7 +63,7 @@
 }
 #lift:hover{
 	cursor: default;
-	font-size: 450%;
+	font-size: 200%;
 }
 #contact{
 	font-family: Amatic SC;
