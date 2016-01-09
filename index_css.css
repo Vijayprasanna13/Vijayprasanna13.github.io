@@ -1,12 +1,9 @@
 
-body{
-	background-color: peru;
-}
 #side-bar-1{
 	animation: pulse 5s infinite;
 	animation-direction: alternate;
 	background-color : peru;
-	height : 100%;
+	min-height : 100%;
 	text-align: center;	
 	
 }
