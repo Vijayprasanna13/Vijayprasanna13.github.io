@@ -1,3 +1,5 @@
 $(window).load(function(){
-	$("#content-index").css("-webkit-filter","blur(0px)");
+	$('#loader').fadeOut(4000).promise().done(function(){
+	$("#content-index").css("-webkit-filter","blur(0px)");	
+	});
 });
