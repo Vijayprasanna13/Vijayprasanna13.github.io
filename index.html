@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vijayprasanna13</title>
 
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -12,11 +13,18 @@
   <script src="/js/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="http://iamceege.github.io/tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://iamceege.github.io/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+  <script type="text/javascript" src="http://iamceege.github.io/tooltipster/dist/js/tooltipster.bundle.js"></script>
 
 <style type="text/css">
   #page-content-wrapper{
@@ -81,6 +89,54 @@
   #list-table{
     align : right;
   }
+  #contact-me{
+    box-shadow: 0px 0px 25px white;
+    margin-top: 2%;
+    background-image: url('/images/footer.jpg');
+  }
+  .logo{
+    padding: 2%;  
+    margin-left: 20px;  
+    cursor: pointer;
+  }
+  #contact-header{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    font-weight: 300; 
+  }
+#gandalf{
+  cursor: pointer;
+}
+#toast-container > .toast {
+    background-image: none !important;
+}
+
+#toast-container > .toast:before {
+    position: fixed;
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 18px;
+    float: left;
+    color: #FFF;
+    padding-right: 0.5em;
+    margin: auto 0.5em auto -1.5em;
+}        
+#toast-container > .toast-warning:before {
+    content: "\f003";
+}
+#toast-container > .toast-error:before {
+    content: "\f001";
+}
+#toast-container > .toast-info:before {
+    content: "\f005";
+}
+#toast-container > .toast-success:before {
+    content: "\f0e7";
+}
+.tooltip_templates{
+  font-family: 'Indie Flower', cursive;
+  font-size: 120%;
+}
 </style>
 
 
@@ -130,7 +186,7 @@
     I <span style="color:#F75D59;">&#9825;</span> to code, read and explore.<br/>
     I'm a Web Developer at <span class="nitt-link" name="spider">Spider, R&D, NITT</span>
     <br/>Also a huge fan of fantasy and binge watcher :p<br/><br/>
-    <img src="/images/fantasy.jpg" width="200" height="200" style="border-radius:20%;border:2px solid #726E6D"> 
+    <img src="/images/fantasy.jpg" width="200" height="200" style="border-radius:20%;border:2px solid #726E6D" id="gandalf"> 
     </div>
     <br/><br/>
   </div>
@@ -139,25 +195,50 @@
     <span id="heading">Projects</span><br/><br/>
     <div>
       <div class="col-md-3">
-        <img src="/images/pixelbug.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" name="pixelbug">
+        <img src="/images/pixelbug.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="pixelbug"  data-tooltip-content="#pixelbug_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/hospital.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" name="hospital">
+        <img src="/images/hospital.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="hospital" data-tooltip-content="#hospital_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/heat.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" name="heat">
+        <img src="/images/heat.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="heat" data-tooltip-content="#heat_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/mdecoder.jpg" width="200" height="200" style="border-radius:50%;border:5px solid white;align:bottom;" name="mdecoder">
+        <img src="/images/mdecoder.jpg" width="200" height="200" style="border-radius:50%;border:5px solid white;align:bottom;" data-tooltip-content="#mdecoder_content" id="mdecoder" class="project-icon">
       </div>
     </div>
     <br/><br/><br/>
-    <div id="heading">
+    <div id="heading" style="margin-top:2%;">
     check out my other projects as well!
+    </div>
+    <div style="display:none;">
+        <span class="tooltip_templates" id="pixelbug_content">
+          The official website for <i>Pixelbug</i>, The photography club of NITT.<br/>
+          Built with <b>PHP using the Laravel 5.1 framework</b><br/>
+          Check out the online galleria and get in touch with awesome photographers!
+        </span>
+        <span id="hospital_content" class="tooltip_templates">
+         A desktop application for a hospital to manage and retrieve records.<br/>
+         Built with <b>Python</b>.
+        </span>
+        <span id="heat_content" class="tooltip_templates">
+         Crowd monitoring system built for NITTFEST'16.<br/> Get to know the number of patriots for your department and cheer for your heroes!<br/>
+         Location is tracked using an Andriod App and displayed on a website.<br/>
+         Built with <b>PHP</b> and <b>Java</b>
+        </span>
+        <span id="mdecoder_content" class="tooltip_templates">
+          An online Math based puzzle event for Pragyan'16.<br/>
+          Solve you way through math puzzles for 6 days to win awesome goodies!<br/>
+          Built with <b>PHP using Laravel</b> and <b>Twitter Bootstrap</b>.
+        </span>
     </div>
   </div>
   <div id="contact-me">
-
+        <br/>
+        <span id="contact-header"><b>Connect with me on</b></span><br/> 
+      <img src="/images/facebook.png" name="facebook" class="logo" height="100" width="100">
+      <img src="/images/twitter.png" name="twitter" class="logo" height="100" width="100">
+      <img src="/images/github.png" name="github" class="logo" height="110" width="130">
   </div>
 </div>
 
@@ -173,7 +254,48 @@ $(document).ready(function(){
     else
       window.open('http://spider.nitt.edu/','_blank');
   });
+
+  $('.logo').click(function(){
+    var linkName = $(this).attr('name');
+    if(linkName == 'facebook')
+      window.open('https://www.facebook.com/vijayprasanna13','_blank');
+    else if(linkName == 'twitter')
+      window.open('https://twitter.com/vijayprasanna13','_blank');
+    else if(linkName == 'github')
+      window.open('https://github.com/Vijayprasanna13','_blank')
+    else console.log(':)');
+  });
+
+  $('#gandalf').click(function(){
+  
+  toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-bottom-center",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "3000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+  }
+  toastr['success']('<i><b>10 points to Gryffindor!</b></i>');
+  });
+  
+  $('.project-icon').tooltipster({
+    theme: 'tooltipster-punk',
+    animation:"grow"
+  });
+
 });	
+</script>
+<script>
 </script>
 </body>
 </html>
