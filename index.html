@@ -22,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="http://iamceege.github.io/tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" href="http://iamceege.github.io/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css">
   <link rel="stylesheet" type="text/css" href="http://iamceege.github.io/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
   <script type="text/javascript" src="http://iamceege.github.io/tooltipster/dist/js/tooltipster.bundle.js"></script>
@@ -127,6 +128,7 @@
 .tooltip_templates{
   font-family: 'Indie Flower', cursive;
   font-size: 120%;
+  overflow-y: hidden;
 }
 </style>
 
@@ -200,7 +202,7 @@
     </div>
     <br/><br/><br/>
     <div id="heading" style="margin-top:2%;">
-    check out my other projects as well!
+    <span id="star" data-tooltip-content="#star_content">check out my other projects as well!</span>
     </div>
     <div style="display:none;">
         <span class="tooltip_templates" id="pixelbug_content">
@@ -221,6 +223,9 @@
           An online Math based puzzle event for Pragyan'16.<br/>
           Solve you way through math puzzles for 6 days to win awesome goodies!<br/>
           Built with <b>PHP using Laravel</b> and <b>Twitter Bootstrap</b>.
+        </span>
+        <span id="star_content" class="tooltip_templates">
+         Star them if you find them interesting! :)
         </span>
     </div>
   </div>
@@ -282,6 +287,10 @@ $(document).ready(function(){
   $('.project-icon').tooltipster({
     theme: 'tooltipster-punk',
     animation:"grow"
+  });
+  $('#star').tooltipster({
+    theme: 'tooltipster-noir',
+    animation: 'grow'
   });
 
 });	
