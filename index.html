@@ -121,16 +121,7 @@
     padding-right: 0.5em;
     margin: auto 0.5em auto -1.5em;
 }        
-#toast-container > .toast-warning:before {
-    content: "\f003";
-}
 #toast-container > .toast-error:before {
-    content: "\f001";
-}
-#toast-container > .toast-info:before {
-    content: "\f005";
-}
-#toast-container > .toast-success:before {
     content: "\f0e7";
 }
 .tooltip_templates{
@@ -272,7 +263,7 @@ $(document).ready(function(){
   "closeButton": false,
   "debug": false,
   "newestOnTop": false,
-  "progressBar": true,
+  "progressBar": false,
   "positionClass": "toast-bottom-center",
   "preventDuplicates": false,
   "onclick": null,
@@ -285,7 +276,7 @@ $(document).ready(function(){
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut"
   }
-  toastr['success']('<i><b>10 points to Gryffindor!</b></i>');
+  toastr['error']('<i><b>10 points to Gryffindor!</b></i>');
   });
   
   $('.project-icon').tooltipster({
