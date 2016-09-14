@@ -1,4 +1,2 @@
 # Vijayprasanna13.github.io
-
-This is my Homepage.
-
+Work in master branch.
