@@ -10,8 +10,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-  <script src="/js/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
@@ -27,117 +27,14 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
   <script type="text/javascript" src="http://iamceege.github.io/tooltipster/dist/js/tooltipster.bundle.js"></script>
 
-<style type="text/css">
-  #page-content-wrapper{
-        position: relative;
-        top: -80px;
-        z-index: -1;
-        pointer-events:none;
-        -webkit-filter: grayscale(75%) blur(1.5px);
-  }
+<link rel="stylesheet" href="css/homepage.css"></style>
+<script src="resize.js"></script>
 
-  #overlay{
-    text-align: center;
-  }
-  #profile-pic{
-    margin-top: 5%;
-  }
-  #overlay > #profile-pic > img{
-    margin-top: 6%;
-    border-radius:50%;
-    border: 5px inset;
-    -webkit-filter: grayscale(25%) blur(0.5px);
-  }
-  #profile-description{
-    font-family: 'Ubuntu Condensed', sans-serif;
-    color: light-grey;
-    font-weight: 80%;
-    font-size: 200%;
-  }
-  .nitt-link{
-    color:grey;
-    cursor: pointer;
-  }
-  .nitt-link:hover{
-    color: green;
-  }
-  #profile-what-i-do{
-    font-family: 'Poiret One', cursive;
-    font-size: 70px;
-  }
-  #profile-hobbies-description{
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 30px;
-  }
-  #description{
-    background-color: #D1D0CE;
-    opacity: 0.8;
-    border-top: 5px dashed black;
-    border-bottom: 5px dashed black;
-  }
-  #projects > #heading {
-    color: #98AFC7;
-    font-size: 50px;
-    font-family: 'Amatic SC', cursive;
-  }
-  #projects > #list{
-    font-family: 'Amatic SC', cursive;  
-  }
-  .marker{
-    font-size: 80px;
-    color: white;
-  }
-  #list-table{
-    align : right;
-  }
-  #contact-me{
-    box-shadow: 0px 0px 25px white;
-    margin-top: 2%;
-    background-image: url('/images/footer.jpg');
-  }
-  .logo{
-    padding: 2%;  
-    margin-left: 20px;  
-    cursor: pointer;
-  }
-  #contact-header{
-    font-family: 'Poiret One', cursive;
-    font-size: 30px;
-    font-weight: 300; 
-  }
-#gandalf{
-  cursor: pointer;
-}
-#toast-container > .toast {
-    background-image: none !important;
-}
-
-#toast-container > .toast:before {
-    position: fixed;
-    font-family: FontAwesome;
-    font-size: 24px;
-    line-height: 18px;
-    float: left;
-    color: #FFF;
-    padding-right: 0.5em;
-    margin: auto 0.5em auto -1.5em;
-}        
-#toast-container > .toast-error:before {
-    content: "\f0e7";
-}
-.tooltip_templates{
-  font-family: 'Indie Flower', cursive;
-  font-size: 120%;
-  overflow-y: hidden;
-}
-</style>
-
-
-  <script type="text/javascript" src="/js/jquery.flexisel.js"></script>
-   <script type="text/javascript" src="/js/flickity.min.js"></script>
-   <script type="text/javascript" src="/js/jquery.galereya.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/flickity.css">
-  <link rel="stylesheet" type="text/css" href="/css/jquery.galereya.css">
+  <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+   <script type="text/javascript" src="js/flickity.min.js"></script>
+   <script type="text/javascript" src="js/jquery.galereya.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/flickity.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.galereya.css">
 
   <!--FONTS-->
   </style>
@@ -179,7 +76,7 @@
     I <span style="color:#F75D59;">&#9825;</span> to code, read and explore.<br/>
     I'm a Web Developer at <span class="nitt-link" name="spider">Spider, R&D, NITT</span>
     <br/>Also a huge fan of fantasy and binge watcher :p<br/><br/>
-    <img src="/images/fantasy.jpg" width="200" height="200" style="border-radius:20%;border:2px solid #726E6D" id="gandalf"> 
+    <img src="images/fantasy.jpg" width="200" height="200" style="border-radius:20%;border:2px solid #726E6D" id="gandalf"> 
     </div>
     <br/><br/>
   </div>
@@ -188,16 +85,16 @@
     <span id="heading">Projects</span><br/><br/>
     <div>
       <div class="col-md-3">
-        <img src="/images/pixelbug.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="pixelbug"  data-tooltip-content="#pixelbug_content" class="project-icon">
+        <img src="images/pixelbug.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="pixelbug"  data-tooltip-content="#pixelbug_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/hospital.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="hospital" data-tooltip-content="#hospital_content" class="project-icon">
+        <img src="images/hospital.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="hospital" data-tooltip-content="#hospital_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/heat.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="heat" data-tooltip-content="#heat_content" class="project-icon">
+        <img src="images/heat.png" width="200" height="200" style="border-radius:50%;border:5px solid white;" id="heat" data-tooltip-content="#heat_content" class="project-icon">
       </div>
       <div class="col-md-3">
-        <img src="/images/mdecoder.jpg" width="200" height="200" style="border-radius:50%;border:5px solid white;align:bottom;" data-tooltip-content="#mdecoder_content" id="mdecoder" class="project-icon">
+        <img src="images/mdecoder.jpg" width="200" height="200" style="border-radius:50%;border:5px solid white;align:bottom;" data-tooltip-content="#mdecoder_content" id="mdecoder" class="project-icon">
       </div>
     </div>
     <br/><br/><br/>
@@ -232,9 +129,9 @@
   <div id="contact-me">
         <br/>
         <span id="contact-header"><b>Connect with me on</b></span><br/> 
-      <img src="/images/facebook.png" name="facebook" class="logo" height="100" width="100">
-      <img src="/images/twitter.png" name="twitter" class="logo" height="100" width="100">
-      <img src="/images/github.png" name="github" class="logo" height="110" width="130">
+      <img src="images/facebook.png" name="facebook" class="logo" height="100" width="100">
+      <img src="images/twitter.png" name="twitter" class="logo" height="100" width="100">
+      <img src="images/github.png" name="github" class="logo" height="110" width="130">
   </div>
 </div>
 

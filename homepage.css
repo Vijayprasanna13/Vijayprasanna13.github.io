@@ -1,0 +1,103 @@
+
+#page-content-wrapper{
+        position: relative;
+        top: -80px;
+        z-index: -1;
+        pointer-events:none;
+        -webkit-filter: grayscale(75%) blur(1.5px);
+  }
+
+  #overlay{
+    text-align: center;
+  }
+  #profile-pic{
+    margin-top: 5%;
+  }
+  #overlay > #profile-pic > img{
+    margin-top: 6%;
+    border-radius:50%;
+    border: 5px inset;
+    -webkit-filter: grayscale(25%) blur(0.5px);
+  }
+  #profile-description{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: light-grey;
+    font-weight: 80%;
+    font-size: 200%;
+  }
+  .nitt-link{
+    color:grey;
+    cursor: pointer;
+  }
+  .nitt-link:hover{
+    color: green;
+  }
+  #profile-what-i-do{
+    font-family: 'Poiret One', cursive;
+    font-size: 70px;
+  }
+  #profile-hobbies-description{
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 30px;
+  }
+  #description{
+    background-color: #D1D0CE;
+    opacity: 0.8;
+    border-top: 5px dashed black;
+    border-bottom: 5px dashed black;
+  }
+  #projects > #heading {
+    color: #98AFC7;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+  }
+  #projects > #list{
+    font-family: 'Amatic SC', cursive;  
+  }
+  .marker{
+    font-size: 80px;
+    color: white;
+  }
+  #list-table{
+    align : right;
+  }
+  #contact-me{
+    box-shadow: 0px 0px 25px white;
+    margin-top: 2%;
+    background-image: url('/images/footer.jpg');
+  }
+  .logo{
+    padding: 2%;  
+    margin-left: 20px;  
+    cursor: pointer;
+  }
+  #contact-header{
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    font-weight: 300; 
+  }
+#gandalf{
+  cursor: pointer;
+}
+#toast-container > .toast {
+    background-image: none !important;
+}
+
+#toast-container > .toast:before {
+    position: fixed;
+    font-family: FontAwesome;
+    font-size: 24px;
+    line-height: 18px;
+    float: left;
+    color: #FFF;
+    padding-right: 0.5em;
+    margin: auto 0.5em auto -1.5em;
+}        
+#toast-container > .toast-error:before {
+    content: "\f0e7";
+}
+.tooltip_templates{
+  font-family: 'Indie Flower', cursive;
+  font-size: 120%;
+  overflow-y: hidden;
+}
