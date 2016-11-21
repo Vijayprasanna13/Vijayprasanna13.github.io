@@ -15,6 +15,7 @@ a:hover {
 }
 #about-me {
   font-size: 20px;
+  min-height: 90%;
 }
 .img-circle {
   opacity: 0.9;
@@ -25,19 +26,12 @@ a:hover {
   -webkit-filter: grayscale(40%);
 }
 .icon {
-  width: 25px;
-  height: 30px;
-  position: absolute;
-}
-#arrow {
-  bottom: 60px;
-}
-#scroll-door {
-  position: absolute;
-  bottom: 25px;
   height: 30px;
   width: 40px;
-  margin-left: -5px;
+  position:relative;
+}
+#scroll-door {
+  margin-left: 3px;
   animation: pulse 0.5s ease-out alternate infinite;
 }
 @keyframes pulse {
