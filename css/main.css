@@ -50,21 +50,9 @@ img {
   min-height: 100%;
 }
 #content {
-  margin-top: 1%;
+  margin-top: 2%;
 }
 #intro {
   text-align: center;
   margin-top: 20%;
-}
-#langs{
-margin-top: -2%;
-}
-.galereya.gallery .galereya-cell {
-      width: 200px;
-      padding: 0;
-
-      -webkit-transition: -webkit-transform 0.3s ease-out;
-      -moz-transition: -moz-transform 0.3s ease-out;
-      -o-transition: -o-transform 0.3s ease-out;
-      transition: transform 0.3s ease-out;
 }

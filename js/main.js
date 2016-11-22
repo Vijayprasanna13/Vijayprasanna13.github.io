@@ -17,5 +17,5 @@ $('#scroll-door').click(function(event) {
 });
 
 $(document).ready(function(){
- $("#gallery").galereya();
+ $("#gallery").justifiedGallery();
 });
