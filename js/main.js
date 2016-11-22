@@ -4,6 +4,13 @@ $('#scroll-door').mouseover(function(){
 $('#scroll-door').mouseout(function(){
   $('#scroll-door').attr({"src":"images/door_close.png"});
 });
+
+setInterval(function(){
+  var px1 = Math.floor(Math.random()*6);
+  var px2 = (px1%2)?-px1:px1;
+  $('#scroll-door').css('box-shadow',''+px2+'px -'+px1+'px 60px #FAFAD2');
+},100);
+
 var setlang = 0;
 $('#scroll-door').click(function(event) {
 
