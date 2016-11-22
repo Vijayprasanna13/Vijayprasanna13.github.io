@@ -13,4 +13,9 @@ $('#scroll-door').click(function(event) {
   speed: 1500,
   easing: "swing"
   });
+// /  LoadGallery();
+});
+
+$(document).ready(function(){
+ $("#gallery").galereya();
 });

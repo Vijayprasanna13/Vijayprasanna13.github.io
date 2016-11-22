@@ -5,7 +5,7 @@
 }
 body  {
   font-family: "Quicksand";
-  background-color: #7CD2E6;
+  background: -webkit-linear-gradient(top, #87e0fd 25%, #53cbf1 40%, #05abe0 100%);
 }
 a {
   text-decoration: none;
@@ -17,6 +17,10 @@ a:hover {
   font-size: 20px;
   min-height: 100%;
 }
+img {
+  border:none;background:none;
+}
+
 .img-circle {
   opacity: 0.9;
   border-radius: 50%;
@@ -41,4 +45,26 @@ a:hover {
   100%{
     bottom: 25px;
   }
+}
+#development {
+  min-height: 100%;
+}
+#content {
+  margin-top: 1%;
+}
+#intro {
+  text-align: center;
+  margin-top: 20%;
+}
+#langs{
+margin-top: -2%;
+}
+.galereya.gallery .galereya-cell {
+      width: 200px;
+      padding: 0;
+
+      -webkit-transition: -webkit-transform 0.3s ease-out;
+      -moz-transition: -moz-transform 0.3s ease-out;
+      -o-transition: -o-transform 0.3s ease-out;
+      transition: transform 0.3s ease-out;
 }
