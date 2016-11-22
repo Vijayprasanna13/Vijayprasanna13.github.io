@@ -53,6 +53,21 @@ img {
   margin-top: 2%;
 }
 #intro {
-  text-align: center;
-  margin-top: 20%;
+  text-align: left;
+  margin-top: 15%;
+  -webkit-filter: grayscale(10%);
+}
+#gallery {
+  margin-top: 10%;
+}
+#gallery > a {
+  pointer-events: none;
+  cursor: default;
+}
+.lang-elem  {
+  -webkit-filter: grayscale(30%) blur(1.5px);
+}
+.lang-elem:hover {
+
+  -webkit-filter: blur(0px);
 }
