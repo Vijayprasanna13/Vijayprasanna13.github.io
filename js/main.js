@@ -14,13 +14,10 @@ $('#scroll-door').click(function(event) {
   speed: 1500,
   easing: "swing"
   });
-});
-
-var images = ["html","css","php","bootstrap","jquery","qt","laravel","js","python","react","lumen","octave","milligram","matlab","babel","omnet","git"];
-$(document).ready(function(){
+  var images = ["html","css","php","bootstrap","jquery","qt","laravel","javascript","python","react","lumen","octave","milligram","matlab","babel","omnet","git"];
   $.map(images,function(data,i){
       $("#gallery").append("<div class='lang-elem'><a><img src='images/langs/"+data+".png'></a></div>");
-  });
+  });  
   $("#gallery").justifiedGallery();
 });
 
