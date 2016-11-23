@@ -13,8 +13,6 @@ setInterval(function(){
 
 var setlang = 0;
 $('#scroll-door').click(function(event) {
-
-  event.preventDefault();
   console.log(this);
   var link = this;
   $.smoothScroll({
@@ -22,6 +20,7 @@ $('#scroll-door').click(function(event) {
   speed: 1500,
   easing: "swing"
   });
+  $("#intro").fadeIn(3000);
   if(!setlang){
       lang_wrapper();
       setlang = 1;
