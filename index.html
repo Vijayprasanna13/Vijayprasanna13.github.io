@@ -1,63 +1,128 @@
-  <html>
-    <head>
-      <title>Vijay Prasanna</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="shortcut icon" href="images/favicon.ico" />
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-     <link rel="stylesheet" href="css/justifiedGallery.min.css">
-     <link rel="stylesheet" href="css/main.css">
-   </head>
-   <body>
-     <div class="container-fluid">
-       <div id="header">
-       <div class="container" id="about-me">
-         <div>
-           <br/>
-           <img class="img-circle" src="images/pp.jpg"/>
-           <br/><br/>
-            <h3>Hello there!</h3>
-            <h3>I am Vijay Prasanna.</h3>
-          <br/>
-          EE undergrad at <a href="http://www.nitt.edu">NIT Trichy</a>.
-          <br/>Developer at <a href="http://spider.nitt.edu">Spider, R&D of NITT</a>.
-          <br/> Passionate about code, electronics and other things beautiful.
-          <br/><br/>
-           So click here to know more about me.<br/><br/>
-        </div>
-         <div id="door">
-           <img src="images/door_close.png" id="scroll-door" class="icon" tolink="#development">
-         </div>
-         <br/>
-       </div>
-     </div>
-       <div id="development" class="container">
-         <div class="row" id="content">
-           <div class="col-sm-3" id="intro">
-             Web Development is my niche and I love all the stuff that comes with it.</br/>
-             I've worked extensively on websites for third party organisations and lead teams on various projects.<br/>
-             Over the years I have been able to get a taste of many popular technologies on Web.
-             (Though I still prefer PHP). <br/>
-             My undergraduate course has allowed me to interact with the latest tools in electronics to design and build circuits for awesome projects. <br/><br/>
-             <p id="batman">Also, I'm Batman.<img src="images/langs/batman.png" width="40" height="40"/></p><br/>
-           </div>
-           <div class="col-sm-9" id="langs">
-               <div id="gallery"></div>
-           </div>
-           <div class="row">
-             <img id="down" src="images/down.png" height="50" width="50" tolink="#projects"/>
-           </div>
-         </div>
-         </div>
-         <div id="projects" class="container" >
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Animated Background Headers | Demo 2</title>
+        <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+        <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="css/demo1.css">
+        <link rel="stylesheet" href="css/footer-distributed.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+        <!--[if IE]>
+        	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+		<div class="container demo-2">
+			<div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <h1 class="main-title">GVP</span></h1>
+                </div>
+                <div class="codrops-top clearfix" style="font-family: 'Lato', sans-serif;font-size: 100%;">
+                   <img class="img-circle" src="img/pp.jpg" style="border-radius: 50%;" width="200" height="200" />
+                   <br/><br/>
+                    <h2>Hello there!</h2>
+                    <h1>I am Vijay Prasanna.</h1>
+                  <br/>
+                  <p>EE undergrad at<a href="http://www.nitt.edu" style="color: tomato">NIT Trichy.</a>
+                  <br/>Developer at<a href="http://spider.nitt.edu" style="color: tomato">Spider, R&D of NITT</a>
+                  <br/><br/> Passionate about code, electronics and other things beautiful.
+                  <br/><br/></p>
+                </div>
+                <hr style="height: 0.2px;opacity:0.3;color: color:#333;background-color:#333;" />
 
-         </div>
-      </div>
-     </div>
-   </body>
-   <script src="js/jquery-3.1.1.min.js"></script>
+                <div class="codrops-header">
+                    <p>Development is my niche and I love all the stuff that comes with it.</br/>
+                 I've worked extensively on websites for third party organisations and lead teams on various projects.
+                 <br/>
+                 Over the years I have been able to get a taste of many popular technologies on Web.</p>
+                    <div class="col-sm-9" id="langs">
+                        <div id="gallery"></div>
+                    </div>
+                </div>  
+            <hr style="height: 0.2px;opacity:0.3;color: color:#333;background-color:#333;" />
+            <!-- Related demos -->
+            <section class="related" style="margin-top: -10%;">
+                <p>Things That I Have Built </p>
+                <a href="https://www.pragyan.org/mdecoder/">
+                    <img src="img/mdecoder.jpg"/ width="250" height="250" style="border: 1px solid #999999" >
+                    <h3>MDecoder'16 - Math based Quiz event for Pragyan'16 (ISO Certified)</h3>
+                </a>
+                <a href="http://sports.nitt.edu/sportsfete">
+                    <img src="img/sportsfete.jpg" width="250" height="250" style="border: 1px solid #999999" />
+                    <h3>Sportsfete'17 - The official Website for NIT Trichy's sportsfest</h3>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=spider.project.nittfestheat&hl=en">
+                    <img src="img/heat.jpg" width="400" height="250" style="border: 1px solid #999999" />
+                    <h3 style="margin-left: 10%;">Nittfest Heat  - Geolocater for Nittfest'16, the official inter college cultural fest.</h3>
+                </a>
+                <a href="https://github.com/Vijayprasanna13/HospitalRecordSystem">
+                    <img src="img/hospital.jpg" width="200" height="200" style="border: 1px solid #999999" />
+                    <h3>Prototype Desktop Application - Patient Records and notification system for public hospitals</h3>
+                </a>
+                <a href="https://github.com/Vijayprasanna13/Induction-motor-performance">
+                    <img src="img/induction.jpg" width="400" height="200" style="border: 1px solid #999999" />
+                    <h3 style="margin-left: 10%;">Induction motor performance charactersitics and simulation using Matlab</h3>
+                </a>
+
+            <p style="font-family: 'Lato',sans-serif;font-size: :90%;"><b>Check out my other stuff on <a href="http://github.com/Vijayprasanna13" style="color: red;">Github</a></b></p>
+            </section>
+		</div>
+        <footer style="margin-top: -5%;" class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="https://www.facebook.com/vijayprasanna13"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/vijayprasanna13"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/vijay-prasanna-b088a6119/"><i class="fa fa-linkedin"></i></a>
+                <a href="http://github.com/Vijayprasanna13"><i class="fa fa-github"></i></a>
+
+            </div>
+
+            <div class="footer-left">
+
+                <p class="footer-links">
+                    <a href="https://vijayprasanna13.github.io">Home</a>
+                    ·
+                    <a href="https://www.quora.com/profile/Vijay-Prasanna-3">Answers</a>
+                    ·
+                    <a href="mailto:vijayprasanna2896@gmail.com" target="_top">Contact</a>
+                </p>
+
+                <p>Built by <span style="color: tomato">Vijayprasanna13</span></p>
+            </div>
+
+        </footer>
+
+        <!-- /container -->
+        <script src="js/rAF.js"></script>
+        <script src="js/demo-2.js"></script>
+           <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery.smooth-scroll.js"></script>
    <script src="js/jquery.justifiedGallery.min.js"></script>
-   <script src="js/main.js"></script>
-  </html>
+
+        <script type="text/javascript">
+            function lang_wrapper(){
+              var images = ["html","css","php","bootstrap","jquery","qt","laravel","javascript","python","react","lumen","octave","milligram","matlab","babel","omnet","git"];
+              $.map(images,function(data,i){
+                  $("#gallery").append("<div class='lang-elem'><a><img id='lang"+i+"' src='img/langs/"+data+".png'></a></div>");
+              });
+              $("#gallery").justifiedGallery();
+            }
+            lang_wrapper();
+        </script>
+	</body>
+</html>
