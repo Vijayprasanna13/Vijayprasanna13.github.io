@@ -11,6 +11,7 @@
 
 .demo-2 .large-header {
 	background-image: url('../img/header-background.jpg');
+	filter: grayscale(25%);
 	background-size: cover;
 }
 
