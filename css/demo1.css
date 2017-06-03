@@ -5,6 +5,14 @@
 	margin:0;
 }
 
+@media only screen and (max-width: 500px) {
+    #gallery {
+        max-height: 90vh;
+        overflow: scroll;
+    }
+}
+
+
 html{
 	background-color: #eaf0f2;
 }
