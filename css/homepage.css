@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	overflow-y:hidden;
+//	overflow-y:hidden;
 }
 
 
@@ -12,7 +12,7 @@ body{
 	top: 15%; 
 	height: 60%;
 	width: 15%;
-	background: #2c3e50;
+	background: linear-gradient(#2f3640,#535c68);
 	border-top-right-radius:10%; 
 	border-bottom-right-radius:10%; 
 }
@@ -33,7 +33,6 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
-
 .menu-options{
 	color: #16a085;
 	padding-left: 2%;
@@ -43,7 +42,7 @@ body{
 #introduction {
 	color: #ecf0f1;
 	min-width: 100%;
-	background-image: url('../img/introduction-bg.jpg');
+	background: linear-gradient(#6a89cc,#40739e);
 	height: 100vh;
 	background-size: auto 100%;
 	overflow: auto;
@@ -54,7 +53,8 @@ body{
 
 #work {
 	min-width: 100%;
-	background-image: url('../img/header-background.jpg');
+    color: #ecf0f1;
+	background: linear-gradient(#40739e,#487eb0);
 	height: 100vh;
 	background-size: cover;
 	overflow: auto;
@@ -64,8 +64,9 @@ body{
 }
 
 #contact {
+    color: #ecf0f1;
 	min-width: 100%;
-	background-image: url('../img/contact.jpg');
+	background: linear-gradient(#487eb0,#0097e6);
 	height: 100vh;
 	background-size: cover;
 	overflow: auto;
@@ -75,9 +76,11 @@ body{
 }
 
 .content-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
 	max-height: 100vh;
 	position: relative;
-	top: 20%;
 	margin-left: 250px;
 	max-width: 75%;
 }
@@ -97,6 +100,10 @@ body{
     	top: 0;
     	border-radius:0;
     	text-align: center;
+    }
+
+    .credentials {
+        grid-template-columns: 0.45fr 1fr !important;
     }
 
     #profile-pic{
