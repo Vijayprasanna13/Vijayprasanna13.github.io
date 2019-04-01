@@ -5,7 +5,7 @@ body{
 
 
 #name-card{
-	z-index: 4;
+	z-index: 3;
 	min-width: 207.9px;	
 	min-height: 358.594px;
 	position: fixed;
